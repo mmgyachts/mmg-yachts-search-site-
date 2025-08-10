@@ -1,4 +1,32 @@
-'use client';
+type Yacht = {
+  id: string;
+  brand?: string;
+  yard?: string;
+  model?: string;
+  series?: string;
+  name?: string;
+  type?: string;
+  loa_m?: number;
+  beam_m?: number;
+  draft_m?: number;
+  guests?: number;
+  cabins?: number;
+  crew?: number;
+  cruise_kn?: number;
+  max_kn?: number;
+  range_nm?: number;
+  year_from?: number;
+  units_built?: string;
+  images?: string[];
+  layouts?: string[];
+  pros?: string[];
+  cons?: string[];
+  gt?: number;
+  hull?: string;
+  superstructure?: string;
+  designers?: string[];
+  suppliers?: string[];
+};'use client';
 import React, { useMemo, useState } from 'react';
 import '../styles/globals.css';
 
@@ -405,14 +433,14 @@ export default function Page() {
 
   const t = i18n[lang];
 
-  const dataset = useMemo(() => {
-    if (tab === 'production') return productionData;
-    if (tab === 'semi') return semiCustomData;
-    return customData;
-  }, [tab]);
+const dataset = useMemo<Yacht[]>(() => {
+  if (tab === 'production') return productionData as Yacht[];
+  if (tab === 'semi') return semiCustomData as Yacht[];
+  return customData as Yacht[];
+}, [tab]);
 
   const filtered = useMemo(() => {
-    let rows = dataset;
+    let rows: Yacht[] = dataset;
     if (query.trim()) {
       const q = query.toLowerCase();
       rows = rows.filter((r: any) =>
