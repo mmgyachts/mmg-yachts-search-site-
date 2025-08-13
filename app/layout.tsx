@@ -2,7 +2,7 @@ import '../styles/globals.css';
 
 export const metadata = {
   title: "MMG Yachts — Yacht Intelligence",
-  description: "Search, compare, and inquire about production yachts, semi-custom series superyachts, and full custom builds.",
+  description: "Search, compare, and inquire about production yachts, series superyachts, and custom builds.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

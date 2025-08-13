@@ -32,22 +32,22 @@ type Yacht = {
 };
 
 const productionData: Yacht[] = [
-  { id: 'azimut-78-fly', brand: 'Azimut', model: '78 Fly', type: 'Flybridge', loa_m: 23.77, beam_m: 5.75, draft_m: 1.77, guests: 8, cabins: 4, crew: 2, cruise_kn: 26, max_kn: 31, range_nm: 340, year_from: 2019, units_built: '~', images: ['https://images.unsplash.com/photo-1505150892987-424388e07288?q=80&w=1600&auto=format&fit=crop'] },
-  { id: 'princess-y85', brand: 'Princess', model: 'Y85', type: 'Flybridge', loa_m: 26.2, beam_m: 6.3, draft_m: 1.77, guests: 8, cabins: 4, crew: 3, cruise_kn: 24, max_kn: 33, range_nm: 300, year_from: 2019, units_built: '~', images: ['https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop'] },
-  { id: 'sunseeker-76-yacht', brand: 'Sunseeker', model: '76 Yacht', type: 'Flybridge', loa_m: 23.6, beam_m: 5.95, draft_m: 1.7, guests: 8, cabins: 4, crew: 2, cruise_kn: 25, max_kn: 32, range_nm: 330, year_from: 2018, units_built: '~', images: ['https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?q=80&w=1600&auto=format&fit=crop'] },
+  { id: 'azimut-78-fly', brand: 'Azimut', model: '78 Fly', type: 'Flybridge', loa_m: 23.77, beam_m: 5.75, draft_m: 1.77, guests: 8, cabins: 4, crew: 2, cruise_kn: 26, max_kn: 31, range_nm: 340, year_from: 2019, units_built: '~', images: ['/images/yacht1.svg'] },
+  { id: 'princess-y85', brand: 'Princess', model: 'Y85', type: 'Flybridge', loa_m: 26.2, beam_m: 6.3, draft_m: 1.77, guests: 8, cabins: 4, crew: 3, cruise_kn: 24, max_kn: 33, range_nm: 300, year_from: 2019, units_built: '~', images: ['/images/yacht2.svg'] },
+  { id: 'sunseeker-76-yacht', brand: 'Sunseeker', model: '76 Yacht', type: 'Flybridge', loa_m: 23.6, beam_m: 5.95, draft_m: 1.7, guests: 8, cabins: 4, crew: 2, cruise_kn: 25, max_kn: 32, range_nm: 330, year_from: 2018, units_built: '~', images: ['/images/yacht3.svg'] },
 ];
 
 const semiCustomData: Yacht[] = [
-  { id: 'heesen-50-steel', brand: 'Heesen', series: '50 Steel', loa_m: 49.98, beam_m: 9.0, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 3800, max_kn: 15.5, guests: 12, cabins: 6, images: ['https://images.unsplash.com/photo-1520975922299-48b6b0d0b225?q=80&w=1600&auto=format&fit=crop'], pros: ['Proven platform', 'Efficient range', 'Shorter delivery'], cons: ['Fixed volume', 'Limited customization vs. full custom'] },
-  { id: 'amels-60', brand: 'Amels', series: '60', loa_m: 60.0, beam_m: 10.4, gt: 830, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4500, max_kn: 15.5, guests: 12, cabins: 6, images: ['https://images.unsplash.com/photo-1499117901949-e34ef1b2444a?q=80&w=1600&auto=format&fit=crop'], pros: ['Large volume for size', 'Renowned build quality'], cons: ['High demand', 'Slot availability'] },
-  { id: 'baglietto-52-tline', brand: 'Baglietto', series: '52 T-Line', loa_m: 52.0, beam_m: 9.2, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4500, max_kn: 16, guests: 12, cabins: 6, images: ['https://images.unsplash.com/photo-1520975941111-9b5d6a61c3bd?q=80&w=1600&auto=format&fit=crop'], pros: ['Italian design', 'Flexible layouts'], cons: ['Longer lead times'] },
-  { id: 'riva-50-m', brand: 'Riva', series: '50 m', loa_m: 50.0, beam_m: 9.0, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4000, max_kn: 15, guests: 12, cabins: 5, images: ['https://images.unsplash.com/photo-1515165562835-c3b8a4b1a2d4?q=80&w=1600&auto=format&fit=crop'], pros: ['Iconic brand appeal'], cons: ['Limited availability'] },
+  { id: 'heesen-50-steel', brand: 'Heesen', series: '50 Steel', loa_m: 49.98, beam_m: 9.0, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 3800, max_kn: 15.5, guests: 12, cabins: 6, images: ['/images/yacht1.svg'], pros: ['Proven platform', 'Efficient range', 'Shorter delivery'], cons: ['Fixed volume', 'Limited customization vs. full custom'] },
+  { id: 'amels-60', brand: 'Amels', series: '60', loa_m: 60.0, beam_m: 10.4, gt: 830, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4500, max_kn: 15.5, guests: 12, cabins: 6, images: ['/images/yacht2.svg'], pros: ['Large volume for size', 'Renowned build quality'], cons: ['High demand', 'Slot availability'] },
+  { id: 'baglietto-52-tline', brand: 'Baglietto', series: '52 T-Line', loa_m: 52.0, beam_m: 9.2, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4500, max_kn: 16, guests: 12, cabins: 6, images: ['/images/yacht3.svg'], pros: ['Italian design', 'Flexible layouts'], cons: ['Longer lead times'] },
+  { id: 'riva-50-m', brand: 'Riva', series: '50 m', loa_m: 50.0, beam_m: 9.0, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4000, max_kn: 15, guests: 12, cabins: 5, images: ['/images/yacht4.svg'], pros: ['Iconic brand appeal'], cons: ['Limited availability'] },
 ];
 
 const customData: Yacht[] = [
-  { id: 'lurssen-90m', yard: 'Lürssen', name: 'Project Atlas (placeholder)', loa_m: 90, beam_m: 14.8, gt: 3000, designers: ['Exterior: TBD', 'Interior: TBD'], suppliers: ['Engines: MTU (example)', 'Stabilizers: Quantum (example)'] },
-  { id: 'feadship-75m', yard: 'Feadship', name: 'Project Sapphire (placeholder)', loa_m: 75, beam_m: 12.5, gt: 1800, designers: ['Exterior: De Voogt (example)', 'Interior: TBD'], suppliers: ['Generators: Kohler (example)'] },
-  { id: 'oceanco-105m', yard: 'Oceanco', name: 'Project Orion (placeholder)', loa_m: 105, beam_m: 16, gt: 4200, designers: ['Exterior: TBD'], suppliers: ['Propulsion: ABB (example)'] },
+  { id: 'lurssen-90m', yard: 'Lürssen', name: 'Project Atlas (placeholder)', loa_m: 90, beam_m: 14.8, gt: 3000, designers: ['Exterior: TBD', 'Interior: TBD'], suppliers: ['Engines: MTU (example)', 'Stabilizers: Quantum (example)'], images: ['/images/yacht2.svg'] },
+  { id: 'feadship-75m', yard: 'Feadship', name: 'Project Sapphire (placeholder)', loa_m: 75, beam_m: 12.5, gt: 1800, designers: ['Exterior: De Voogt (example)', 'Interior: TBD'], suppliers: ['Generators: Kohler (example)'], images: ['/images/yacht3.svg'] },
+  { id: 'oceanco-105m', yard: 'Oceanco', name: 'Project Orion (placeholder)', loa_m: 105, beam_m: 16, gt: 4200, designers: ['Exterior: TBD'], suppliers: ['Propulsion: ABB (example)'], images: ['/images/yacht1.svg'] },
 ];
 
 const i18n = {
@@ -81,7 +81,7 @@ function Hero({ lang }:{ lang:'en'|'es' }) {
   const t = i18n[lang];
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute inset-0 opacity-25" style={{backgroundImage:"url('https://images.unsplash.com/photo-1507152832244-10d45c7eda57?q=80&w=2400&auto=format&fit=crop')", backgroundSize:'cover', backgroundPosition:'center'}} />
+      <div className="absolute inset-0 opacity-40" style={{backgroundImage:"url('/images/hero.svg')", backgroundSize:'cover', backgroundPosition:'center'}} />
       <div className="relative">
         <Section>
           <div className="py-12 md:py-16">
@@ -264,7 +264,6 @@ export default function Page() {
 
   return (
     <main className="min-h-screen text-neutral-900 dark:text-neutral-50">
-      {/* Header */}
       <div className="header text-white">
         <Section>
           <div className="py-3 flex items-center justify-between">
@@ -282,7 +281,6 @@ export default function Page() {
 
       <Hero lang={lang} />
 
-      {/* Tabs (inline utilities so they don't stack) */}
       <Section>
         <nav className="mt-6">
           <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100/60 dark:bg-neutral-900/60 p-1">
@@ -311,41 +309,36 @@ export default function Page() {
         </nav>
       </Section>
 
-      {/* Toolbar */}
       <Toolbar lang={lang} query={query} setQuery={setQuery} minLen={minLen} setMinLen={setMinLen} maxLen={maxLen} setMaxLen={setMaxLen} brand={brand} setBrand={setBrand} brands={brands} />
 
-      {/* Grid */}
       <Section>
         <div className="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((item) => (
             <YachtCard key={item.id} item={item} onToggleCompare={toggleCompare} isCompared={!!compare.find((c) => c.id === item.id)} />
           ))}
-          {!filtered.length && (<div className="col-span-full text-center text-neutral-500 py-20">No results.</div>)}
+          {!filtered.length and (<div className="col-span-full text-center text-neutral-500 py-20">No results.</div>)}
         </div>
       </Section>
 
-      {/* Comparison */}
       <ComparisonTable items={compare} />
 
-      {/* CTA */}
       <Section>
         <section className="mt-16 card p-6 md:p-8">
-          <h3 className="text-xl font-semibold">{t.ctaTitle}</h3>
-          <p className="mt-2 text-neutral-600 dark:text-neutral-300 max-w-3xl">{t.ctaBody}</p>
+          <h3 className="text-xl font-semibold">{i18n[lang].ctaTitle}</h3>
+          <p className="mt-2 text-neutral-600 dark:text-neutral-300 max-w-3xl">{i18n[lang].ctaBody}</p>
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <a href="tel:+13057481402" className="btn btn-ghost">Call: +1 (305) 748-1402</a>
             <a href="mailto:info@mmgyachts.com" className="btn btn-ghost">Email: info@mmgyachts.com</a>
-            <a href="https://intel.mmgyachts.com" className="btn btn-dark">Visit our main database</a>
+            <a href="https://www.mmgyachts.com" target="_blank" rel="noreferrer" className="btn btn-dark">Visit our main database</a>
           </div>
         </section>
       </Section>
 
       <CompareDrawer items={compare} onClear={clearCompare} />
 
-      {/* Footer */}
       <div className="mt-16 footer text-white/80">
         <Section>
-          <div className="py-8 text-sm">© {new Date().getFullYear()} MMG Yachts · 3850 Bird Road, Suite 1001E, Coral Gables, FL 33146</div>
+          <div className="py-8 text-sm">© 2025 MMG Yachts · 3850 Bird Road, Suite 1001E, Coral Gables, FL 33146</div>
         </Section>
       </div>
     </main>

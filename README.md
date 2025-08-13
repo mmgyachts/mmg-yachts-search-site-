@@ -1,13 +1,12 @@
-# MMG Yachts — Yacht Intelligence (MMG Branded + Free Font)
+# MMG Yacht Intel — Ready Repo (fresh)
 
 - Brand navy: #231121, gold accent: #c5a46d
-- Free font: **Barlow** (Google Fonts) as a temporary substitute for Neuzeit S LT Std
-- Stub yachts included for visual testing
-- EN/ES toggle, filters, compare up to 4
+- Free font: **Barlow** (Google Fonts)
+- Horizontal tabs (no @apply dependence)
+- Local hero + yacht placeholders only
+- EN/ES UI, compare up to 4
 
-## Quick start
-npm install
-npm run dev
-
-## Deploy on Vercel
-Push to GitHub → Vercel auto-builds.
+## Deploy
+1) Upload these files to your repo root (replace everything).
+2) Vercel → Redeploy → Clear build cache.
+3) Test on the .vercel.app URL, then reattach intel.mmgyachts.com.

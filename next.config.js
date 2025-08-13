@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      { protocol: 'https', hostname: 'images.unsplash.com' },
-      { protocol: 'https', hostname: 'mmgyachts.com' }
-    ]
-  }
+  images: { unoptimized: true } // using local SVGs only
 };
 module.exports = nextConfig;
