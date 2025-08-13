@@ -31,12 +31,14 @@ type Yacht = {
   suppliers?: string[];
 };
 
+// --- Production (local images) ---
 const productionData: Yacht[] = [
   { id: 'azimut-78-fly', brand: 'Azimut', model: '78 Fly', type: 'Flybridge', loa_m: 23.77, beam_m: 5.75, draft_m: 1.77, guests: 8, cabins: 4, crew: 2, cruise_kn: 26, max_kn: 31, range_nm: 340, year_from: 2019, units_built: '~', images: ['/images/yacht1.svg'] },
   { id: 'princess-y85', brand: 'Princess', model: 'Y85', type: 'Flybridge', loa_m: 26.2, beam_m: 6.3, draft_m: 1.77, guests: 8, cabins: 4, crew: 3, cruise_kn: 24, max_kn: 33, range_nm: 300, year_from: 2019, units_built: '~', images: ['/images/yacht2.svg'] },
   { id: 'sunseeker-76-yacht', brand: 'Sunseeker', model: '76 Yacht', type: 'Flybridge', loa_m: 23.6, beam_m: 5.95, draft_m: 1.7, guests: 8, cabins: 4, crew: 2, cruise_kn: 25, max_kn: 32, range_nm: 330, year_from: 2018, units_built: '~', images: ['/images/yacht3.svg'] },
 ];
 
+// --- Semi-Custom (local images) ---
 const semiCustomData: Yacht[] = [
   { id: 'heesen-50-steel', brand: 'Heesen', series: '50 Steel', loa_m: 49.98, beam_m: 9.0, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 3800, max_kn: 15.5, guests: 12, cabins: 6, images: ['/images/yacht1.svg'], pros: ['Proven platform', 'Efficient range', 'Shorter delivery'], cons: ['Fixed volume', 'Limited customization vs. full custom'] },
   { id: 'amels-60', brand: 'Amels', series: '60', loa_m: 60.0, beam_m: 10.4, gt: 830, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4500, max_kn: 15.5, guests: 12, cabins: 6, images: ['/images/yacht2.svg'], pros: ['Large volume for size', 'Renowned build quality'], cons: ['High demand', 'Slot availability'] },
@@ -44,12 +46,12 @@ const semiCustomData: Yacht[] = [
   { id: 'riva-50-m', brand: 'Riva', series: '50 m', loa_m: 50.0, beam_m: 9.0, gt: 499, hull: 'Steel', superstructure: 'Aluminium', range_nm: 4000, max_kn: 15, guests: 12, cabins: 5, images: ['/images/yacht4.svg'], pros: ['Iconic brand appeal'], cons: ['Limited availability'] },
 ];
 
+// --- Custom (add images too) ---
 const customData: Yacht[] = [
   { id: 'lurssen-90m', yard: 'Lürssen', name: 'Project Atlas (placeholder)', loa_m: 90, beam_m: 14.8, gt: 3000, designers: ['Exterior: TBD', 'Interior: TBD'], suppliers: ['Engines: MTU (example)', 'Stabilizers: Quantum (example)'], images: ['/images/yacht2.svg'] },
   { id: 'feadship-75m', yard: 'Feadship', name: 'Project Sapphire (placeholder)', loa_m: 75, beam_m: 12.5, gt: 1800, designers: ['Exterior: De Voogt (example)', 'Interior: TBD'], suppliers: ['Generators: Kohler (example)'], images: ['/images/yacht3.svg'] },
   { id: 'oceanco-105m', yard: 'Oceanco', name: 'Project Orion (placeholder)', loa_m: 105, beam_m: 16, gt: 4200, designers: ['Exterior: TBD'], suppliers: ['Propulsion: ABB (example)'], images: ['/images/yacht1.svg'] },
 ];
-
 const i18n = {
   en: {
     appTitle: 'MMG Yachts — Yacht Intelligence',
